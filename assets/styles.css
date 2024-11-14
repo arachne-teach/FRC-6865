@@ -1,0 +1,343 @@
+html,body {
+    overflow-x: hidden; 
+}
+
+#carouselExampleAutoplaying .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 500px;
+}
+
+.fa-solid {
+	color:#201c1c;
+}
+
+.smallerIMG {
+	width: 70%;
+}
+
+.padding{
+    padding: 1%;
+}
+
+.xtraPadding {
+	padding: 0 10% 0 10%;
+}
+
+.yellowLink:hover{
+    color: #eed43d;
+}
+
+.cardYellow {
+	background-color: #eed33dd8;
+}
+  
+.card:hover img {
+	opacity: 0.3;
+	filter: grayscale(100%);
+}
+  
+.cardYellow * {
+	transition: all .35s ease-in-out;
+	background-color: white;
+} 
+
+.scale {
+	transition: 0.20s;
+}
+
+.scale:hover {
+	-webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+.animation {
+	transition: all .35s ease-in-out;
+	background-color: white;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+	margin-right: 1%;
+}
+
+.cleanLinks {
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.video-container {
+    width: 410px;
+    height: 315px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#show {
+    display: none;
+}
+
+.form-control {
+	border-radius: 5px;
+}
+
+/* Anything Banner Related */
+
+.pageBanners {
+    width: 100%;
+    height: 450px;
+    background-attachment: local;
+	background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    background-position: center top;
+
+    /* Flexbox properties to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerHeader {
+    width: 450px;
+    height: 75px;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	font-size: 46px;
+    background-color: #eed33dd8;
+	border-radius: 10px;
+    color: #000000;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-banner {
+	background-image: url('images/banners/about-us-banner.jpeg');
+}
+
+#in-the-news-banner {
+	background-image: url('images/banners/in-the-news-banner.jpg');
+}
+
+#resources-banner {
+	background-image: url('images/banners/resources-banner.jpeg');
+}
+
+#sponsors-banner {
+	background-image: url('images/banners/sponsors-banner.jpg');
+}
+
+#fundraising-banner {
+	background-image: url('images/banners/fundraising-banner.jpg');
+}
+
+#gallery-banner {
+	background-image: url('images/banners/gallery-banner.jpg');
+}
+
+
+#environmental-technology-banner {
+	background-image: url('images/banners/environmental-banner.jpg');
+}
+
+ /* Make this for specific pages: Environmental */
+#environmental-technology-banner > h1 {
+	width: 1000px;
+	height: 75px;
+} 
+
+.carousel-indicators [data-bs-target] {
+	background-color: #eed43d;
+}
+
+
+/* Media Queries for Banners */
+
+@media (max-width: 960px) {
+	.bannerHeader {
+		width: 300px;
+    	height: 60px;
+		font-size: 35px;
+    	background-color: #eed33dd8;
+		border-radius: 10px;
+   	 	color: #000000;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	#environmental-technology-banner > h1, #sponsors-banner > h1 {
+		width: 400px;
+		font-size: 28px;
+	}
+} 
+
+@media (max-width: 450px) {
+	#environmental-technology-banner > .bannerHeader, #sponsors-banner > .bannerHeader {
+		width: 300px;
+	}
+}
+
+/* Media Queries for Nav */
+
+ @media (max-width: 450px) {
+	.navbar-brand {
+		font-size: 14px;
+	}
+	.logo-image {
+		display: flex;
+		justify-content: center;
+	}
+	.logo-image.img {
+		width: 60%;
+	}
+} 
+
+/* Media Queries for Mobile */
+
+@media (max-width: 580px) {
+	main {
+		padding: 0 30px 0 30px;
+	}
+}
+
+/* Media Queries for Honey Combs */
+
+IMG {
+	width: 100%;
+	display: block;
+}
+.item IMG {
+	visibility: hidden;
+}
+.honeyCombs {
+	margin: 3rem auto;
+	padding: 1rem 0 2.4rem;
+/* 	background-color: gold; */
+	text-align: center;
+	max-width: 50rem;
+}
+.item {
+	width: 10rem;
+	height: 10rem;
+	position: relative;
+	
+	/* Default - simple fallback when no CSS Grid support */
+	display: inline-block;
+	margin: 0.4rem;
+}
+.item::before { /* Goldenrod outline on the hexagon */
+	content: "";
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background-color: goldenrod;
+	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+	transform: scale(1.077);
+	transition: transform 0.3s;
+}
+.item:hover::before {
+	transform: scale(1.154);
+}
+.item A {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+/* 	background-image: See JS. */
+	background-size: cover;
+	background-position: center;
+	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+}
+
+
+
+@supports (display: grid) {
+
+	@media (min-width: 17rem) {
+		.honeyCombs {
+			display: grid;
+			max-width: 15rem;
+			grid-template-columns: repeat(3, 5rem);
+		}
+		.item {
+			grid-column: span 2;
+			margin: 0; /* reset */
+			margin-bottom: -1.4rem;	/* shifting up the items in the next row */
+		}
+		.item:nth-child(even) {grid-column: 2}
+	}
+	
+	@media (min-width: 22rem) {
+		.honeyCombs {
+			max-width: 20rem;
+			grid-template-columns: repeat(4, 5rem);
+		}
+		.item:nth-child(3n+1) {grid-column: 1}
+		.item:nth-child(3n+2) {grid-column: 3}
+		.item:nth-child(3n+0) {grid-column: 2}
+	}
+	
+	@media (min-width: 32rem) {
+		.honeyCombs {
+			max-width: 30rem;
+			grid-template-columns: repeat(6, 5rem);
+		}
+		.item:nth-child(5n+1) {grid-column: 1}
+		.item:nth-child(5n+2) {grid-column: 3}
+		.item:nth-child(5n+3) {grid-column: 5}
+		.item:nth-child(5n+4) {grid-column: 2}
+		.item:nth-child(5n+0) {grid-column: 4}
+	}
+	
+	@media (min-width: 42rem) {
+		.honeyCombs {
+			max-width: 40rem;
+			grid-template-columns: repeat(8, 5rem);
+		}
+		.item:nth-child(7n+1) {grid-column: 1}
+		.item:nth-child(7n+2) {grid-column: 3}
+		.item:nth-child(7n+3) {grid-column: 5}
+		.item:nth-child(7n+4) {grid-column: 7}
+		.item:nth-child(7n+5) {grid-column: 2}
+		.item:nth-child(7n+6) {grid-column: 4}
+		.item:nth-child(7n+0) {grid-column: 6}
+	}
+	
+	@media (min-width: 54rem) {
+		.honeyCombs {
+			max-width: 50rem;
+			grid-template-columns: repeat(10, 5rem);
+		}
+		.item:nth-child(9n+1) {grid-column: 1}
+		.item:nth-child(9n+2) {grid-column: 3}
+		.item:nth-child(9n+3) {grid-column: 5}
+		.item:nth-child(9n+4) {grid-column: 7}
+		.item:nth-child(9n+5) {grid-column: 9}
+		.item:nth-child(9n+6) {grid-column: 2}
+		.item:nth-child(9n+7) {grid-column: 4}
+		.item:nth-child(9n+8) {grid-column: 6}
+		.item:nth-child(9n+0) {grid-column: 8}
+	}
+}
